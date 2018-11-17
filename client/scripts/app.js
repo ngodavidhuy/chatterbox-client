@@ -19,9 +19,15 @@ var App = {
 
   fetch: function(callback = ()=>{}) {
     Parse.readAll((data) => {
+      Messages.all = data.results;
+      for (let obj of data.results) {
+        if (obj.roomname && !Rooms[obj.roomname]) {
+          Rooms[obj.roomname] = true;
+        }
+      }
+      MessagesView.render(Messages.all);
+      RoomsView.render(Rooms);
       // examine the response from the server request:
-      console.log(data);
-
       callback();
     });
   },
