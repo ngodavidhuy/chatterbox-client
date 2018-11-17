@@ -53,10 +53,20 @@ form {
 }
 
 form input[type=text] {
+    margin-top: 10px;
     margin-right: 10px;
     width: 70%;
     font-size: 12px;
     padding: 5px;
+}
+
+#newRoomName {
+    padding: 0px 10px;
+    width: 100px;
+}
+
+#message {
+    padding: 30px 10px;
 }
 
 .chat {

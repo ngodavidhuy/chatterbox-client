@@ -4,6 +4,13 @@ var RoomsView = {
   $select: $('#rooms select'),
 
   initialize: function() {
+    RoomsView.$button.on('click', RoomsView.handleRoomChange);
+  },
+  
+  handleRoomChange: function(event) {
+    event.preventDefault();
+    let roomPick = $('select').val()
+    
   },
 
   render: function(roomsObj) {
