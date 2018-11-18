@@ -20,6 +20,7 @@ body {
     font-size: 35px;
     margin-bottom: 5px;
     padding: 5px;
+    color: white;
 }
 
 #main h1 span {
@@ -96,5 +97,10 @@ form input[type=text] {
 .friend {
     color: #fff;
     background-color: #0090da;
+}
+
+.follow {
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 

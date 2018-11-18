@@ -16,7 +16,7 @@ var FormView = {
     if (text.length > 0) {
       Parse.create({username, text, roomname});
     }
-    console.log('hi');
+    $('#message').val('');
     
   },
 
